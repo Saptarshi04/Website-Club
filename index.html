@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NITR-Clubs</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body onload="displayDateTime()">
+  <div class="Date">
+    <p id="datetime"></p>
+  </div>
+  <div class="paragraph">
+  <p>Welcome to NIT Rourkela.We here at NITRKL believe in allround development of a student apart from academics.</p>
+  <p>Hence we have a number of clubs promoting varied interests and passions.Find your passion here and meet like minded people and foemost enjoy the work you do.</p>
+  </div>
+  <header id="changebg">
+<div class="main">
+  <div class="logo">
+    <img src="https://d2lk14jtvqry1q.cloudfront.net/media/small_National_Institute_of_Technology_Rourkela_cbc972d135_33ec404c12.png">
+    </div>
+    <div class="title">
+      <h1 id="heading">Clubs</h1>
+    </div>
+  <ul>
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Tech Clubs</a></li>
+    <li><a href="#">Cultural Clubs</a></li>
+    <li><a href="#">Sports Clubs</a></li>
+    <li><a href="#">Social Clubs</a></li>
+  </ul>
+  <div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+  <div class="closebtn" onclick="togglePopup()">&times;</div>
+  <h1>Welcome</h1>
+  <p>Welcome to my trial Website showing the various clubs present in NITRKL</p>
+    </div>  
+</div>
+</header>
+<footer>
+  Name-Saptarshi Paik<br>
+  Roll No.-122EE0832
+</footer>
+  <div class="button">
+    <button onclick="togglePopup()" class="btn" >Prompt</button>
+    <button onclick="change()" class="btn">Change BG</button>
+    <button onclick="changeHeading()" class="btn">Change Heading</button>
+  </div>
+  <script>function togglePopup() {
+    document.getElementById("popup-1").classList.toggle("active");
+  }
+  function changeHeading() {
+          setTimeout(function(){document.getElementById("heading").innerHTML = "Clubs- Find your Passion Here"},5000);
+        }
+      function change()
+      {
+        document.getElementById("changebg").style.backgroundImage="url(https://i.pinimg.com/originals/7b/a1/d7/7ba1d7d42b6525fdb757ca95256f2cc1.jpg)";
+      }
+      function displayDateTime() {
+        var date = new Date();
+        document.getElementById("datetime").innerHTML = date;
+      }
+  </script>
+</div>
+</body>
+</html>
